@@ -53,7 +53,7 @@ echo "$user ALL=(ALL:ALL) ALL" >> /etc/sudoers.d/$user
 
 #Grub Bios version
 
-pacman -S grub
+pacman -S grub --noconfirm
 grub-install --target=i386-pc /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 
