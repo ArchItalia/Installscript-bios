@@ -26,6 +26,12 @@ DE="xorg gnome-shell nautilus gnome-console gvfs gnome-control-center xdg-user-d
 DM="gdm" # Display Manager
 Service="gdm NetworkManager firewalld bluetooth cronie reflector" # Service
 
+#---- nomenclature for bootloader !IMPORTANT > uncomment your
+
+#p="sda2" 
+#p="vda2"
+#p="nvme0n1p2"
+
 
 # end setting ----------------------------------------------
 
@@ -54,7 +60,7 @@ echo "$user ALL=(ALL:ALL) ALL" >> /etc/sudoers.d/$user
 #Grub Bios version
 
 pacman -S grub --noconfirm
-grub-install --target=i386-pc /dev/sda
+grub-install --target=i386-pc /dev/$p
 grub-mkconfig -o /boot/grub/grub.cfg
 
 
