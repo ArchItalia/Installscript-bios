@@ -26,11 +26,6 @@ DE="xorg gnome-shell nautilus gnome-console gvfs gnome-control-center xdg-user-d
 DM="gdm" # Display Manager
 Service="gdm NetworkManager firewalld bluetooth cronie reflector" # Service
 
-# [root=/dev/XXX] decommenta la nomenclatura in uso per systemd-boot IMPORTANTE! -- uncomment the nomenclature in use for systemd-boot IMPORTANT!
-
-#p="sda2" 
-#p="vda2"
-#p="nvme0n1p2"
 
 # end setting ----------------------------------------------
 
